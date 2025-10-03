@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Rosbag URL Injector",
+  "version": "1.0",
+  "description": "Detect input info on Jira issue pages and inject Rosbag search links",
+  "permissions": ["storage", "clipboardWrite", "activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["https://tier4.atlassian.net/browse/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
