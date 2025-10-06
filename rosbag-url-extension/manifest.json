@@ -6,7 +6,10 @@
   "permissions": ["storage", "clipboardWrite", "activeTab", "scripting"],
   "content_scripts": [
     {
-      "matches": ["https://tier4.atlassian.net/browse/*"],
+      "matches": [
+        "https://tier4.atlassian.net/browse/*",
+        "https://console.mob.tier4.jp/projects/*/rosbag*"
+      ],
       "js": ["content.js"]
     }
   ]
